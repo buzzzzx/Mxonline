@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'users',
+    'courses',
 ]
 AUTH_USER_MODEL = "users.UserProfile"
 
@@ -127,3 +128,9 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
+
+# Media files
+
+MEDIA_URL = '/media/'  # 这个是在浏览器上访问该上传文件的url的前缀
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
